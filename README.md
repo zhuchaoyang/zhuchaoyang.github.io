@@ -1,54 +1,67 @@
-# 前端技术文档
+# 前端技术文档 [转自 郭永峰老师]
 
-> **重要提示：原文档内容请[前往这里查看](https://github.com/GuoYongfeng/idoc/tree/2016_bak/md)**
+> 人生不只有代码，还有诗和远方
 
-亲爱的小伙伴们，感谢你一路既往对我的支持，2017已来，技术还在迭代更新，我们的学习热情也不退减，保持高昂的学习姿态是让我们的生活和工作都蒸蒸日上的不竭动力。
+# React课程学习
 
-## 逝去的 2016
+- [最新React学习指南](./md/React课程专题/React学习指南.md)
 
-在2016年初，我开始使用markdown文档来整理一些对前端技术的实践，通过idoc这一简单方便的工具将文档生成html文件供大家预览，同时，将生成的整站资源通过github pages发布让所有人都可以预览。
+## Course 0：基础知识
 
-很多朋友都会找我咨询前端相关的技术，包括移动端、react、node、前端架构等等，非常荣幸我的一些文字能够让大家在工作和学习的路上有所帮助，这也是我一直坚持开放免费的原因，帮助大家的同时，也让我自己有了小小的成就感。
+- [Git和Github快速入门指南](./md/技术分享/Git和Github快速入门指南.md)
+- [基本SHELL命令使用](./md/技术分享/基本SHELL命令使用.md)
+- [Nodejs环境配置](./md/技术分享/Nodejs环境配置.md)
+- [NPM的使用方法](./md/技术分享/NPM的使用方法.md)
 
-通过大家的反馈，普遍对文章内容中详细的实践操作比较认可，因为一些技术的出现或是刚刚开始接触某一个技术，总是碍于其他渠道一些冗长的博文或是比较虚化的概念而迟迟无法学习上手，另外，也有部分同学不太习惯英文文档的查看，这也正是基于这些考虑我才有了切入点去持续的写作。
+## Course 1：ES6 和 Babel
+- [Babel使用指南](./md/React课程专题/Babel使用指南.md)
+- [快速搞定常用的ES6新特性](./md/React课程专题/快速搞定常用的ES6新特性.md)
+- [JavaScript函数式编程](./md/React课程专题/JavaScript函数式编程.md)
 
-另外，对于技术的学习，还有一个需求点就是成体系，比如react，总是只言片语或是边边角角的学习，无法有效的学习和使用，真的是一个难点。基于这些信息，促成了早期的yoffe这个技术博客的内容和形态。
+## Course 2：Webpack
+- [使用Webpack实现基础功能](./md/React课程专题/Webpack基础.md)
+- [搭建开发环境工作流](./md/React课程专题/使用Webpack搭建开发态工作流.md)
+- [搭建生产环境工作流](./md/React课程专题/使用Webpack搭建生产环境工作流.md)
 
-但是，在这里要对广大的读者朋友们道歉，因为个人的懒惰，在后期便没有对博客的内容持续更新了。新的内容还是在持续产出的，只是展示的渠道不在这里了。主要在以下地方：
+## Course 3：React基础
+- [React基础知识详解（ES6版本）](./md/React课程专题/React基础知识详解.md)
+- [React技术分享（ES5版本）](./md/React课程专题/React技术分享.md)
+- [React组件开发过程](./md/团队/React组件开发过程.md)
+- [React编码规范](./md/React课程专题/React编码规范.md)
 
-- [用友网络FED团队博客](https://github.com/iuap-design/blog/issues)
-- [《现代化前端工程师权威指南》](https://guoyongfeng.github.io/book/)
-- [珠峰前端架构师之路之React课程](http://www.zhufengpeixun.cn/react/index.html)
+## Course 4：React应用开发
+- [github-notetaker应用开发](./md/React课程专题/github-notetaker应用开发.md)
+- [React-AJAX的最佳实践](./md/React课程专题/React-AJAX的最佳实践.md)
 
-## 你好，2017
+## Course 5：Router
+- [React-router路由实践](./md/React课程专题/React-router路由实践.md)
 
-开始全新的2017，你我的技术之路也在过去一年的积累上启程出发，为了方便我们的技术交流，我也会做一些升级和改变。
+## Course 6：Redux
+- [Redux快速上手](./md/React课程专题/Redux快速上手.md)
+- [Redux超酷的开发工具Redux-Devtools](./md/React课程专题/Redux超酷的开发工具Redux-Devtools.md)
+- [深入理解Redux的Middleware](./md/React课程专题/深入理解Redux的Middleware.md)
+- [react-router-redux](https://github.com/reactjs/react-router-redux)
 
-### 改变现有的yoffe个人博客
+## Course 7：全栈开发
+- [基于React+Redux的全栈开发实践指南](./md/React课程专题/全栈Redux实战.md)
 
-目前个人博客的部分内容将会梳理后转移到**《现代化前端工程师权威指南》**上，而yoffe将会成为真正的个人技术博客网站，同时会在知乎上开启个人专栏和我们团队的专栏。
+## 相关技术
+- [Immutable 详解及 React 中实践](https://segmentfault.com/a/1190000003910357)
+- [React应用测试](./md/React课程专题/React应用测试.md)
 
-要重点说明的是，目前博客上的内容将会备份在：2016_dev分支。master分支以及访问：http://guoyongfeng.github.io/idoc/index.html的内容都将会完全改变，这里提前和大家说明。
+# 技术分享
+- [2015年大前端技术年终总结](./md/技术分享/2015年大前端技术年终总结.md)
+- [Node.js知识详解](./md/技术分享/Node.js知识详解.md)
+- [学习Git](./md/技术分享/学习Git.md)
+- [Node.js环境配置和Git基本配置](./md/技术分享/Node.js环境配置和Git基本配置.md)
 
-在过去一年在知识传播上做的太少了，今年会产出更多优质内容，持续和大家分享。
+# 前沿观察
+- [基于nodejs的开发框架koa](./md/前沿观察/基于nodejs的开发框架koa.md)
+- [轻型MVVM框架Vue.js](./md/前沿观察/轻型MVVM框架Vue.js.md)
+- [Node.js MVC框架ThinkJS](./md/前沿观察/Node.js MVC框架ThinkJS.md)
 
-另外，也请大家关注我们的团队技术博客：https://github.com/iuap-design/blog/issues，以及我们团队做的系列开源产品：https://github.com/iuap-design
+# 团队
+- [前端技术平台](./md/团队/前端技术平台.md)
+- [性能优化点总结](./md/性能优化/性能优化点总结.md)
 
-### 打造完整全面的前端技术视频
-
-是的，在去年中下旬开始，我尝试录制在线的视频内容。内容的形式比较有意思，将大的学习体系综合并且拆解，单独的技术点和实战相结合，并且每个技术点的讲解都通过5-20分钟的小视频进行呈现，而且还配套了代码和讲解文档。目前已经有超过1000名同学观看学习了，如果你也感兴趣，请前往：http://www.zhufengpeixun.cn/react/index.html。
-
-不过，这个是付费课程，付费后有全程的学习小组和班主任进行管理，学习效率很高。
-
-### 团队博客和知乎专栏
-
-今年，我会加强技术的传播和推广，并且提高内容的质量，让大家轻松愉快的获取最新的技术并运用。请持续关注~
-
-## 合作和建议
-
-- 如果你目前就在阅读，并且有一些改进的建议和想法，请直接email给我：296512521@qq.com。
-- 合作
-  - 书籍编写合作：一个人写内容还是很有挑战性的，期待你和我一起
-  - 商务合作：如果有企业培训，技术分享，招聘等合作，也请直接联系，微信：13552329235.
-
-最后，让我们在2017撸起袖子加油干吧~！！
+<br><br>
