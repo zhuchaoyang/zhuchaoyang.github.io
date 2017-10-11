@@ -1,0 +1,112 @@
+
+#carousel {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    /*transform: preserve-3d;*/
+    position: relative;
+    top: 200px;
+    width: 1200px;
+    /*overflow: hidden;*/
+
+}
+
+#container {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+/*    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);*/
+    -webkit-transform-origin: center bottom 0;
+    transform-origin: center bottom 0;
+
+    -webkit-transform-style: preserve-3d;
+    /*transform-style: preserve-3d;*/
+
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+
+    width: 200px;
+    z-index: 1000;
+    -webkit-transform: rotateX(-20deg);
+    -ms-transform: rotateX(-20deg);
+    -o-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+
+
+}
+
+item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    -webkit-transform: translateZ(400px);
+    -ms-transform: translateZ(400px);
+    -o-transform: translateZ(400px);
+    transform: translateZ(400px);
+    position: absolute;
+}
+item img {
+   /* -webkit-transform: item_x 4s linear infinite;
+    -ms-transform: item_x 4s linear infinite;
+    -o-transform: item_x 4s linear infinite;
+    transform: item_x 4s linear infinite;*/
+    width: 100%;
+    transform: rotateZ(45deg);
+}
+/*@-webkit-keyframes item_x {
+    0%   { transform: rotateZ(0deg) }
+    100% { transform: rotateZ(360deg) }
+}
+@-o-keyframes item_x {
+    0%   { transform: rotateZ(0deg) }
+    100% { transform: rotateZ(360deg) }
+}
+@-moz-keyframes item_x {
+    0%   { transform: rotateZ(0deg) }
+    100% { transform: rotateZ(360deg) }
+}
+@keyframes item_x {
+    0%   { transform: rotateZ(0deg) }
+    100% { transform: rotateZ(360deg) }
+}*/
+
+
+
+.tc-btn-container {
+  display: block;
+  float: left;
+  height: 35px;
+  margin-top: -12.5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  /*z-index: 9999;*/
+}
+
+.tc-next {
+    background-color: #333;
+    color: white;
+    display: block;
+    float: right;
+    font-size: 12px;
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+.tc-prev {
+    background-color: #333;
+    color: white;
+    display: block;
+    float: left;
+    font-size: 12px;
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+}

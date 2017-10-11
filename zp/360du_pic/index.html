@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>360度旋转图片</title>
+<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+<style>
+	body {margin:0;padding: 0;width: 100%;height: 100%;}
+	img {width:640px; height:378px; position:absolute; left:50%; top:50%; margin-top:-189px; margin-left:-320px;}
+</style>
+
+<!-- <script type="text/javascript" src="js.js"></script> -->
+<script>
+	window.onload=function(){
+		alert("请点击左键  进行拖动");
+		var x=0;
+		var oImg=document.getElementById('img1');
+		var aImg=document.getElementsByTagName("img");
+		var oLastImg=oImg;
+		var lastX=0;
+		var iSpeed=0;
+		var timer=null;
+		var i=0;
+	//不兼容IE9以下	
+		// for (i=1; i<77;i++) {
+		// 	var oNewImg=document.createElement("img");
+		// 	oNewImg.src="image/"+i+".jpg";
+		// 	oNewImg.style.display="none";
+		// 	document.body.appendChild(oNewImg);
+		// } 
+	//兼容IE9以下	
+		for (i=1; i<77;i++) {
+			(function(oNewImg) {
+				var oImg=new Image();
+				oImg.onload=function(){
+					oNewImg.src=this.src;
+				}
+				oImg.src="image/"+i+".jpg";
+				oNewImg.style.display="none";
+				document.body.appendChild(oNewImg);
+			}) (document.createElement("img"));
+		}
+
+
+		document.onmousedown=function(ev){
+			var oEvent=ev||event;
+			var disX=oEvent.clientX-x;
+			clearInterval(timer);
+			document.onmousemove=function(ev){
+				var oEvent=ev||event;
+				x=oEvent.clientX-disX;				//x为拖动距离，重新拖动，会叠加上一次的x值
+				move();
+				
+				iSpeed=x-lastX;		//求 速度
+				lastX=x;
+				return false;		//兼容IE,取消选中图片的默认行为
+			}
+			document.onmouseup=function(){
+				document.onmousemove=false;
+				document.onmouseup=false;
+
+				timer=setInterval(function(){			//让鼠标松开时，能缓动一会
+					x+=iSpeed;
+					move();
+					document.title=iSpeed;
+				},30)
+			}
+			return false;     //取消选中图片的默认行为
+		}
+
+		function move() {
+			if ( iSpeed>0) {
+				iSpeed--;
+			} else {
+				iSpeed++;
+			}
+			
+			if ( iSpeed==0) {
+				clearInterval(timer);
+			}
+			var l=parseInt(-x/10);
+			if (l>0) {
+				l=l%77;
+			} else {
+				l+= -Math.floor(l/77)*77
+			}
+			if ( oLastImg!=aImg[l] ) {
+				oLastImg.style.display="none";
+				aImg[l].style.display="block";
+				oLastImg=aImg[l];
+			}
+		}
+
+	}
+
+</script>
+
+</head>
+
+<body>
+	<img id="img1" src="image/0.jpg" />
+
+</body>
+</html>
