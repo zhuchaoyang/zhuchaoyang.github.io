@@ -1,0 +1,28 @@
+{
+    "name": "Yoffe",
+    "version": "1.0.0",
+    "description": "Welcome To GuoYongfeng's Blog",
+    "keywords": [
+        "idoc",
+        "guoyongfeng"
+    ],
+    "homepage": "http://guoyongfeng.github.io/idoc/",
+    "author": "GuoYongfeng <guoyff@yonyou.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GuoYongfeng"
+    },
+    "licenses": "MIT",
+    "scripts": {
+        "dev": "idoc server",
+        "build": "idoc build",
+        "publish": "git push origin gh-pages",
+        "deploy": "npm run build && npm run publish"
+    },
+    "idoc": {
+        "theme": "doc",
+        "md": [
+            "首页.md"
+        ]
+    }
+}
