@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>朱朝阳</title>
-
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./assets/favicon.ico"/>
+  <link rel="stylesheet" href="./assets/fonts/iconfont.css">
+  <title>Document</title>
+  <script src="./plugins/browserdetect.js"></script>
+  <!-- <script src="./plugins/jquery.min.js"></script> -->
+<link href="main.css" rel="stylesheet"></head>
 <body>
-<div class="navbar ">
-    <div class="container">
-        <div class="logo">朱朝阳</div>
-        <input type="checkbox" id="idoc_nav" />
-        <div class="menu_tree">
-        <ul><li class="active"><a href="index.html">首页</a></li></ul>
-        </div>
-        <a href="https://github.com/zhuchaoyang/my-documents">idoc</a>
+  <div id="app">
+    <p style="color: #00aeef;font-size: 30px;margin: 200px auto;text-align: center;">Loading...</p>
+  </div>
 
-        <div class="forkgithub"><a target="_blank" href="https://github.com/zhuchaoyang">fork on github</a></div>
+  <script>
+    //检查浏览器是否是低版本IE浏览器
+    if ( BrowserDetect.browser == 'Internet Explorer' && BrowserDetect.version < 9 ){
+      alert('你的浏览器版本过低，简历页面无法正常显示，请用高版本浏览器打开或用手机横屏浏览')
+    }
 
-
-    </div>
-
-</div>
-
-
-
-</body>
-<script src="http://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
-<script>
-
-
-
-</script>
+  </script>
+<script type="text/javascript" src="common.8b411c95.js"></script><script type="text/javascript" src="main.8b411c95.js"></script><script type="text/javascript" src="vendor.8b411c95.js"></script></body>
 </html>
